@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="prod.css">
+</head>
+<body class='bg-indigo-100'> <!-- Alteração da cor do BG -->
+    <div class='grid grid-cols-1 lg:grid-cols-2'> <!-- Está sendo criado um grid que no tamanho padrão mobile first exibe 1 coluna e no tamanho large+ exibe 2 colunas -->
+        <div class='bg-blue-600 lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12'> <!-- cor BG | tamanho large+ exibe 100vh, display flex, align itens center, padding | tamanho small+ padding -->
+            <div class='flex-grow'> <!-- ocupa todo espaço horizontal disponível -->
+                <h1 class='text-white text-center text-2xl sm:text-5xl mb-2'> <!-- cor, alinhamento, tamanho, tamanho small, margin bottom -->
+                    Seja bem-vindo(a)
+                </h1>
+                <p class='text-center text-blue-200 sm:text-lg'>
+                    Faça login para começar
+                </p>
+            </div>
+        </div>
+        <div class='lg:min-h-screen lg:flex lg:items-center p-12 lg:p-15 xl:p-20'>
+            <div class='flex-grow bg-white shadow-xl rounded-md border border-gray-300 p-8'> 
+                <div class='sm:flex sm:items-center'>
+                    <img src='baby-yoda.jpg' alt='Baby Yoda' class='sm:flex-shrink-0 mx-auto sm:mx-0 h-24 rounded-full'>
+                    <div class='sm:ml-4 sm:text-left text-center'>
+                        <p class='text-xl'>Baby Yoda</p>
+                        <p class='text-sm text-gray-600'> Função: Fazer você explodir de fofura </p>
+                        <div class='mt-4'>
+                            <button type='button' class='text-red-500 hover:text-white hover:bg-red-500 border border-red-500 font-semibold rounded-md text-xs px-4 py-1 focus:outline-none'>
+                                Não é Baby Yoda?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <form class='flex w-full mt-8'>
+                    <input type='password' placeholder='Sua senha' class='flex-1 w-full text-gray-700 bg-gray-200 rounded-md hover:bg-white border border-gray-200 outline-none focus:bg-white py-2 px-4'>
+                    <button type='button' class='flex-shrink-0 bg-teal-500 hover:bg-teal-600 focus:outline-none py-2 px-4 ml-4 text-white font-semibold rounded-md'>
+                        Entrar
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
