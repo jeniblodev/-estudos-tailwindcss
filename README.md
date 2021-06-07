@@ -14,7 +14,7 @@ Estou estudando [TailwindCss](https://tailwindcss.com) e neste repositório est�
 
 
 ## 🎨 Projetos
-*⚙ Em andamento*
+*✓ Finalizado*
 
 01 - Tela de Login - Projeto baseado no [curso rápido do Ricardo Sanches](https://youtu.be/1qH3wAtX4So).
 
